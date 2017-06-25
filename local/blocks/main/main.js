@@ -4,7 +4,6 @@ $(function(){
 		var fliskerSlider = $('.flicker-example');
 		if(typeof(fliskerSlider) !== 'undefined' && fliskerSlider.length > 0)
 		{
-			console.log('1111');
 			$('.flicker-example').flicker();
 		}
 	});
@@ -122,7 +121,50 @@ $(function(){
 	}
 
 	//Init main slick slider
-	var slickSlider = $(".regular");
+	var slickSlider = $(".regular"),
+		clientWidth = window.innerWidth,
+		slidesPerPage = 2,
+		sliderHTML = $('.our-medics .regular').html(),
+		addNewSlider = false;
+
+	//Данное решение сделано для адаптации слайдера, т.к. стандартными
+	//CSS средствами это сделать не получается полноценно.
+	//Если разрешение экрана > 770, показываем и листаем по 1 слайду соответственно
+	if(clientWidth < 770)
+	{
+		slidesPerPage = 1;
+		addNewSlider = true;
+	}
+
+	function initSlickSlider(){
+		if(addNewSlider) return false;
+
+		clientWidth = window.innerWidth;
+
+		console.log(clientWidth);
+
+		if(clientWidth < 770)
+		{
+			slidesPerPage = 1;
+			addNewSlider = true;
+
+			$('.our-medics .regular').empty();
+			$('.our-medics .regular').attr('class', 'regular');
+			$('.our-medics .regular').html(sliderHTML);
+
+			$(".regular").slick({
+				dots: true,
+				arrows: true,
+				infinite: true,
+				slidesToShow: slidesPerPage,
+				slidesToScroll: slidesPerPage
+			});
+		}
+	};
+
+	window.onresize = function(){
+		initSlickSlider();
+	};
 
 	if(typeof(slickSlider) !== 'undefined' && slickSlider.length > 0)
 	{
@@ -130,8 +172,8 @@ $(function(){
 			dots: true,
 			arrows: true,
 			infinite: true,
-			slidesToShow: 2,
-			slidesToScroll: 2
-	  });
+			slidesToShow: slidesPerPage,
+			slidesToScroll: slidesPerPage
+		});
 	}
 });

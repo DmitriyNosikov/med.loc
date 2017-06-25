@@ -1359,6 +1359,18 @@ footer {
   .footer__item-link, .footer-item__pay-text, .footer-item__pay-info {
     font-size: 14px;
   }
+  .our-medics__item {
+    width: 90%;
+  }
+  .our-medics__item h3 {
+    font-size: 24px;
+  }
+  .medic-info__spec, .medic-info__prof, .medic-info__exp, .medic-info__city {
+    font-size: 20px;
+  }
+  .our-medics__item-cons {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 1070px) {
@@ -1438,6 +1450,12 @@ footer {
   .footer-item__pay-text {
     margin-top: 10px;
   }
+  .our-medics__item {
+    padding: 50px 14px;
+  }
+  .our-medics__all a {
+    width: 30%;
+  }
 }
 
 /* APPLE IPAD */
@@ -1457,6 +1475,23 @@ footer {
   .consultation-info {
     padding: 100px 0px;
   }
+  .our-medics__item-more {
+    width: 30% !important;
+  }
+  .our-medics__item-cons {
+    width: 50% !important;
+  }
+  .our-medics__item h3, .medic-info {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .our-medics__item-cons {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 735px) {
@@ -1465,6 +1500,12 @@ footer {
   }
   .get-cons-item__btn {
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .our-medics__item h3, .medic-info {
+    width: 60%;
   }
 }
 
@@ -1504,6 +1545,21 @@ footer {
   }
   .why-we .why-we__line_high {
     font-size: 34px;
+  }
+  .our-medics__item-more {
+    width: 45% !important;
+  }
+  .our-medics__item-cons {
+    width: 65% !important;
+  }
+  .our-medics__all a {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .our-medics__item h3, .medic-info {
+    width: 70%;
   }
 }
 
@@ -1572,6 +1628,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 535px) {
+  .our-medics__item h3, .medic-info {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 525px) {
   .consultation-info__item {
     padding: 5px 25px 45px;
@@ -1601,6 +1663,24 @@ footer {
     display: block;
     margin: 0px;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .our-medics__item-more {
+    width: 55% !important;
+  }
+  .our-medics__item-cons {
+    width: 75% !important;
+  }
+  .our-medics__all a {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .our-medics__item h3, .medic-info {
+    width: 90%;
   }
 }
 
@@ -1635,6 +1715,21 @@ footer {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .our-medics__item h3, .medic-info {
+    width: 100%;
+  }
+  .our-medics__item-more {
+    width: 55% !important;
+  }
+  .our-medics__item-cons {
+    width: 85% !important;
+  }
+  .our-medics__all a {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 440px) {
   .consultation-info__item h2::after {
     width: 95px;
@@ -1662,6 +1757,21 @@ footer {
   }
   .triggers-block__img-item p {
     font-size: 18px;
+  }
+  .our-medics__item h3 {
+    font-size: 22px;
+  }
+  .medic-info__spec, .medic-info__prof, .medic-info__exp, .medic-info__city {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .our-medics__item-more {
+    width: 65% !important;
+  }
+  .our-medics__item-cons {
+    width: 95% !important;
   }
 }
 
