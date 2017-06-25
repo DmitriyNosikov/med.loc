@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Circe-Regular';
+  src: url("/local/blocks/fonts/Circe-Regular.eot");
+  src: url("/local/blocks/fonts/Circe-Regular.eot?#iefix") format("embeded-opentype"), url("/local/blocks/fonts/Circe-Regular.svg#webfont") format("svg"), url("/local/blocks/fonts/Circe-Regular.woff") format("woff"), url("/local/blocks/fonts/Circe-Regular.ttf") format("truetype");
+}

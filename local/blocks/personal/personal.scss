@@ -1,0 +1,1033 @@
+@import '../system/fonts.scss';
+@import '../colors/colors.scss';
+@import '../system/system.scss';
+@import '../header/header.scss';
+
+/* PERSONAL CABINET */
+/* Стили для меню в ЛК */
+@mixin title
+{	
+	margin: 50px 0;
+	font-size: $titleSize;
+	font-weight: bold;
+	color: $titleColor;
+}
+
+@mixin mainBtn
+{
+	display: block;
+    padding: 10px 25px;
+    border: 2px solid $buttonColor2;
+    background-color: $buttonColor2;
+    border-color: $buttonColor2;
+    -webkit-border-radius: 31px;
+            border-radius: 31px;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+@mixin mainBtnActive
+{
+	border: 2px solid $buttonActiveColor;
+    background-color: $buttonActiveColor;
+    border-color: $buttonActiveColor;
+    text-decoration: none;
+    color: white;
+}
+
+@mixin defBtn
+{
+	padding: 10px 25px;
+    border: 2px solid #e1e5e6;
+    -webkit-border-radius: 31px;
+            border-radius: 31px;
+    text-decoration: none;
+    text-align: center;
+    font-size: $lowTextSize;
+    color: $textColor;
+}
+
+@mixin defBtnActive
+{
+	text-decoration: none;
+    background-color: #edf0f0;
+    border-color: #edf0f0;
+    color: black;
+}
+
+body
+{
+	font-family: $main-font !important;
+	font-size: 14px;
+}
+
+.header_in_lk
+{
+	div.main-menu
+	{
+		position: relative !important;
+		display: block !important;
+	}
+
+	.header-prone a,
+	.header-action__enter,
+	.header-action__reg,
+	.header-menu .navbar .nav li a
+	{
+		color: $textColor;
+	}
+
+	.header-action__enter,
+	.header-action__reg
+	{
+		border: 2px solid #e1e5e6;
+	}
+
+	.header-menu .navbar
+	{
+		background: none;
+	}
+
+	.send-feedback,
+	.main-slider
+	{
+		display: none;
+	}
+
+	.navbar
+	{
+		margin-bottom: 0 !important;
+		border-top: 1px solid $delimColor;
+	}
+}
+
+.personal-page__menu
+{
+	position: relative;
+	background-color: $buttonColor2;
+	font-size: $textSize;
+	text-align: center;
+	padding: 10px 0;
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	color: white;
+}
+
+.personal-page__body
+{
+	font-size: $textSize;
+	color: $textColor;
+}
+
+.personal-page__body
+{
+	.row
+	{
+		.col-md-3
+		{
+			padding-top: 50px;
+			border-right: 2px solid $delimColor;
+		}
+
+		.col-md-3:first-child
+		{
+			border-left: 2px solid $delimColor;
+		}
+	}
+}
+
+.personal-page__body input
+{
+	display: block;
+	border: none;
+	color: $textColor;
+}
+
+.input-label
+{
+	font-size: $lowTextSize;
+	color: #7d7e82;
+}
+
+//Колонка МОИ ДАННЫЕ
+.personal-page__user-photo img,
+.personal-page__user-photo label,
+.personal-page__user-photo label span
+{
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.personal-page__user-photo img
+{
+	width: 125px;
+	height: 125px;
+	margin: 0px auto;
+   	-webkit-border-radius: 50%;
+   	        border-radius: 50%;
+}
+
+.personal-page__user-photo label span
+{
+	font-size: $lowTextSize;
+	text-decoration: underline;
+	font-weight: normal;
+	color: $titleColor;
+	cursor: pointer;
+}
+
+.personal-page__user-photo label input[type="file"]
+{
+	display: none;
+}
+
+.personal-page__user-photo a:hover
+{
+	text-decoration: none;
+}
+
+.user-info__name input[type="text"],
+.user-info__name textarea
+{
+	font-size: $subtitleSize;
+	font-weight: bold;
+	border: none;
+	color: $titleColor;
+}
+
+.user-info__name textarea
+{
+	width: 100%;
+	font-size: $middleTextSize;
+	resize: none;
+}
+
+.user-info__phone select,
+.user-info__phone input[type="text"]
+{
+	display:block;
+	vertical-align: middle;
+	color: $textColor;
+}
+
+.user-info__phone select
+{
+	width: 50%;
+	-moz-text-align-last: right;
+	     text-align-last: right;
+	text-align: right;
+	border: none;
+	border-bottom: 2px dashed $textColor;
+}
+
+.user-info__phone input[type="text"],
+.personal-page__user-pass input[type="text"]
+{
+	padding: 10px 25px;
+    border: 2px solid #e1e5e6;
+    -webkit-border-radius: 31px;
+            border-radius: 31px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.user-info__phone input[type="text"]
+{
+	width: 90%;
+    margin: 15px 0px 0px auto;
+    text-align: right;
+}
+
+.user-personal-info form input[type="submit"],
+.personal-page__user-pass form input[type="submit"]
+{
+	display: block;
+	width: 100%;
+	margin-top: 40px;
+    padding: 10px 20px;
+    background-color: $buttonColor2;
+	border-color: $buttonColor2;
+    -webkit-border-radius: 31px;
+            border-radius: 31px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.user-personal-info form input[type="submit"]:hover,
+.personal-page__user-pass form input[type="submit"]:hover
+{
+	background-color: $buttonActiveColor;
+}
+
+.user-personal-info form input[type="submit"]
+{
+    padding: 10px 25px;
+    -webkit-border-radius: 31px;
+            border-radius: 31px;
+    text-decoration: none;
+    color: white;
+}
+
+.personal-page__user-pass h2
+{
+	display: block;
+	margin-top: 50px;
+	font-weight: bold;
+	color: $textColor;
+}
+
+.personal-page__user-pass input[type="text"]
+{
+	width: 100%;
+	margin: 6px auto 20px;
+}
+
+.personal-page__user-pass form input[type="submit"]
+{
+	margin-bottom: 100px;
+}
+
+
+//Колонка БАЛАНС
+.user-balance__val,
+.user-balanse__add
+{
+	display: block;
+}
+
+.user-balance__val
+{
+	font-size: $subtitleSize;
+	color: $buttonColor2;
+}
+
+.user-balanse__add
+{
+	padding: 10px 25px;
+	margin-top: 20px;
+    border: 2px solid #e1e5e6;
+    -webkit-border-radius: 31px;
+            border-radius: 31px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: $textColor;
+}
+
+.user-balanse__add:hover
+{
+	text-decoration: none;
+	background-color: #edf0f0;
+    color: black;
+}
+
+//Колонка МОИ КОНСУЛЬТАЦИИ
+.user-cons__item
+{
+	font-size: $textSize;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid $delimColor;
+	color: #7d7e82;
+}
+
+//Колонка ДОКУМЕНТЫ
+.user-documents__form
+{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.user-documents__form label
+{
+    font-weight: normal;
+}
+
+.user-documents__form label span
+{
+ 	text-decoration: underline;
+    color: $buttonColor2;
+    cursor: pointer;
+}
+
+.user-documents__form label span:hover
+{
+	text-decoration: none;
+}
+
+.user-documents__form label input[type="file"]
+{
+	display: none;
+}
+
+.user-documents__list-item 
+{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid $delimColor;
+}
+
+.user-documents__list-item a
+{
+	display: block;
+	font-size: $baseTextSize;
+	color: #7d7e82;
+}
+
+.user-documents__list-item a:hover
+{
+
+}
+
+/* СТРАНИЦА СПИСКА МЕДИКОВ */
+.operator-cons h1
+{
+	@include title;
+	margin-bottom: 20px;
+}
+
+.operator-cons h2
+{
+	margin-bottom: 50px;
+	font-size: $subtitleSize;
+	color: $textColor;
+}
+
+.operator-cons__item
+{
+	display: block;
+    width: 100%;
+    // width: 95%;
+    height: 410px;
+    margin-bottom: 25px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    padding: 20px 40px;
+    -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.operator-cons__item-two .operator-cons__item-text
+{
+	margin-bottom: 90px;
+}
+
+.operator-cons__item-title
+{
+	font-size: $triggers2Size;
+    font-weight: bold;
+    color: $buttonColor2;
+}
+
+.operator-cons__item-text
+{
+	font-size: $textSize;
+	color: $textColor;
+}
+
+.operator-cons__item-btn
+{
+	@include mainBtn;
+	width: 90%;
+    margin: 20px auto;
+}
+
+.operator-cons__item-btn:hover
+{
+	@include mainBtnActive;
+}
+
+.operator-cons__item-price
+{
+	font-weight: bold;
+	font-size: $baseTextSize;
+}
+
+.operator-cons__item-more
+{
+	text-align: center;
+	font-size: $middleTextSize;
+}
+
+.operator-cons__item-or,
+.operator-cons__item-prof
+{
+	display: block;
+	color: $textColor;
+}
+
+.operator-cons__item-prof
+{
+	text-decoration: underline;
+}
+
+.operator-cons__item-prof:hover
+{
+	color: $buttonColor2;
+}
+
+//Наши врачи
+.our-medics h1
+{
+	@include title;
+	margin-bottom: 20px;
+}
+
+.our-medics__filter
+{
+	display: block;
+	margin-bottom: 50px;
+}
+
+.our-medics__filter-item,
+.filter-item__spec-block
+{
+	display: inline-block;
+	margin-right: 10px;
+	font-size: $textSize;
+	color: $textColor;
+}
+
+.our-medics__filter-item-active
+{
+	color: $buttonColor2;
+}
+
+.our-medics__filter-item:hover
+{
+	text-decoration: none;
+	color: $buttonColor2;
+}
+
+.filter-item__spec-block label
+{
+	font-weight: normal;
+	margin-left: 40px;
+	border-bottom: 1px solid $textColor;
+}
+
+.our-medics__filter-item-spec
+{
+	border: none;
+}
+
+.our-medics__list-item
+{
+	display: block;
+	margin-bottom: 25px;
+	padding: 40px 20px;
+    -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.medic-photo,
+.medic-info,
+.medic-cons
+{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+
+.medic-photo__img,
+.medic-photo__more
+{
+	display: block;
+}
+
+.medic-photo__img
+{
+	max-width: 255px;
+	max-height: 230px;
+}
+
+.medic-photo__more
+{
+    @include defBtn;
+	margin-top: 25px;
+}
+
+.medic-photo__more:hover
+{
+    @include defBtnActive;
+}
+
+.medic-info h2
+{
+	margin-top: 0px;
+	font-weight: bold;
+	color: $titleColor;
+}
+
+.medic-info-list
+{
+	list-style: none;
+	padding: 0px;
+}
+
+.medic-info-list__spec
+{
+	font-weight: bold;
+}
+
+.medic-info-list__spec,
+.medic-info-list__prof,
+.medic-info-list__exp,
+.medic-info-list__city
+{
+	margin-bottom: 10px;
+	font-size: 26px;
+}
+
+.medic-cons
+{
+   padding: 50px 0px 0px 60px;
+}
+
+.medic-cons__text,
+.medic-cons__price,
+.medic-cons__get-cons
+{
+	display: block;
+}
+
+.medic-cons__text,
+.about-price__text
+{
+	font-size: $middleTextSize;
+	margin: 0px;
+}
+
+.medic-cons__price,
+.about-price__price
+{
+	font-size: $subtitleSize;
+	color: $buttonColor2;
+}
+
+.medic-cons__get-cons,
+.about-price__get-cons
+{
+	@include mainBtn;
+}
+
+.medic-cons__get-cons:hover,
+.about-price__get-cons:hover
+{
+	@include mainBtnActive;
+}
+
+//Стили детальной страницы медика
+
+//Слайдер на детальной странице
+
+.med-detail__name
+{
+	@include title;
+	font-size: $triggers2Size;
+	margin-bottom: 20px;
+}
+
+.med-detail__spec,
+.med-detail__desc
+{
+	font-size: $middleTextSize;
+	font-weight: bold;
+	color: $textColor;
+}
+
+.med-detail__desc
+{
+	font-weight: normal;
+}
+
+.med-detail__profile
+{
+	display: block;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.med-detail__profile-item
+{
+	@include defBtn;
+	display: inline-block;
+	padding: 10px 50px;
+	margin-right: 15px;
+}
+
+.med-detail__profile-item_active
+{
+	@include defBtnActive;
+}
+
+.med-detail__tabs
+{
+    display: block;
+    margin: 15px -15px 50px;
+    text-align: right;
+    border-bottom: 2px solid $delimColor;
+    overflow: hidden;
+}
+
+.med-detail__tabs-item 
+{
+	position: relative;
+    display: inline-block;
+    font-size: $baseTextSize;
+    padding: 10px 30px 35px;
+    margin-bottom: -33px;
+    background-color: $buttonColor2;
+    border-top: 4px solid $delimColor;
+    border-left: 4px solid $delimColor;
+    border-right: 4px solid $delimColor;
+    border-bottom: none;
+    -webkit-border-radius: $middleTextSize;
+            border-radius: $middleTextSize;
+    color: white;
+    cursor: pointer;
+   	z-index: 1;
+}
+
+.med-detail__tabs-item_active,
+.med-detail__tabs-item:hover
+{
+	background-color: white;
+	z-index: 3;	
+	color: $buttonColor2;
+}
+
+.med-detail__tabs-item-left
+{
+    margin-right: -25px;
+    position: relative;
+    z-index: 2;
+}
+
+.tab
+{
+	display: none;
+}
+
+.tab.tab-active
+{
+	display: block;
+}
+
+.tab__med-time_info
+{
+	font-size: 16px;
+	color: $textColor;
+}
+
+.tab__med-time_info span
+{
+	color: $buttonActiveColor;
+}
+
+.tab__med-time_info a
+{
+	color: $textColor;
+}
+
+.tab__med-time_info a:hover
+{
+	color: $buttonColor2;
+}
+
+.tab__med-time_info,
+.tab__med-time_calendar,
+.tab__med-time_time
+{
+    margin-bottom: 50px;
+}
+
+.time-header
+{
+    display: block;
+    padding: 2px 0px 10px;
+    color: $textColor;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+.time-body__item
+{
+    padding: 10px 0px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 16px;
+    font-weight: bold;
+    color: $textColor;
+}
+
+.med-detail__about
+{
+	display: block;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	border-bottom: 2px solid $delimColor;
+}
+
+.med-detail__about-img,
+.med-detail__about-text,
+.med-detail__about-price
+{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+
+.med-detail__about-img
+{
+	width: 20%;
+	max-width: 255px;
+	max-height: 230px;
+}
+
+.med-detail__about-text
+{
+	width: 37%;
+	font-size: $lowTextSize;
+	color: $textColor;
+}
+
+.med-detail__about-price
+{
+	width: 37%;
+	padding: 30px 0px 0px 60px;
+}
+
+.about-price__get-cons
+{
+	display: inline-block;
+	width: 90%;
+	margin: 0px auto;
+}
+
+.about-price__price
+{
+	display: block;
+}
+
+.med-detail__exp-item
+{
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid $delimColor;
+}
+
+.med-detail__exp-title
+{
+	margin-top: 0px;
+	font-size: $subtitleSize;
+	font-weight: bold;
+}
+
+.med-detail__exp-text
+{
+	font-size: $textSize;
+	color: $textColor;
+}
+
+.med-detail__diplomas
+{
+	text-align: center;
+}
+
+.med-detail__diplomas-title
+{
+	font-size: $middleTextSize;
+	margin-top: 0px;
+}
+
+.med-detail__diplomas-item
+{
+	display: block;
+	width: 80%;
+	margin: 0px auto 15px;
+	vertical-align: top;
+}
+
+.block-delimmiter
+{
+	display: block;
+	height: 2px;
+	margin-top: 50px;
+	background-color: $delimColor;
+}
+
+/* Slick slider CSS */
+.our-medics
+{
+    margin-bottom: 50px;
+}
+
+.our-medics h1
+{
+	@include title;
+}
+
+.our-medics__item
+{
+  	display: block;
+    width: 85%;
+    margin: 0px auto;
+    margin-bottom: 25px;
+    padding: 50px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 20px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.our-medics__item img
+{
+	display: block;
+	max-width: 250px;
+	max-height: 250px;
+	margin: 0px auto;
+}
+
+.our-medics__item h3
+{
+	font-size: $subtitleSize;
+	color: $titleColor;
+	font-weight: bold;
+}
+
+.medic-info
+{
+	list-style: none;
+	padding: 0px;
+}
+
+.medic-info__spec
+{
+	font-weight: bold;
+}
+
+.medic-info__spec,
+.medic-info__prof,
+.medic-info__exp,
+.medic-info__city
+{
+	margin-bottom: 10px;
+	font-size: 26px;
+}
+
+.our-medics__item-more,
+.our-medics__item-cons
+{
+	display: block;
+    margin: 0px auto;
+    padding: 10px 25px;
+    border: 2px solid;
+    -webkit-border-radius: 31px;
+            border-radius: 31px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.our-medics__item-more
+{
+	width: 65%;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background-color: #fcfcfc;
+    border-color:#edf0f0;
+    color: black;
+}
+
+.our-medics__item-cons
+{
+	width: 70%;
+    text-decoration: none;
+	background-color: $buttonColor2;
+    border-color: $buttonColor2;
+    color: white;
+}
+
+.our-medics__item-more:hover
+{
+    text-decoration: none;
+    background-color: #edf0f0;
+    border-color: #edf0f0;
+    color: black;
+}
+
+.our-medics__item-cons:hover
+{
+    text-decoration: none;
+    background-color: $buttonActiveColor;
+    border-color: $buttonActiveColor;
+    color: white;
+}
+
+.our-medics__all a
+{
+    display: block;
+    width: 20%;
+    margin: 20px auto 50px;
+    padding: 10px 25px;
+    background: $buttonColor;
+    background: -webkit-gradient(linear, left bottom, left top, from(#30aab1), to(#40bdbc));
+    background: -webkit-linear-gradient(bottom, #30aab1, #40bdbc);
+    background: -o-linear-gradient(bottom, #30aab1, #40bdbc);
+    background: linear-gradient(to top, #30aab1, #40bdbc);
+    border: 2px solid;
+    border-color: $buttonColor2;
+    -webkit-border-radius: 31px;
+            border-radius: 31px;
+    text-align: center;
+    font-size: $textSize;
+    color: white;
+}
+
+.our-medics__all a:hover
+{
+	text-decoration: none;
+    background: $buttonActiveColor;
+    border-color: $buttonActiveColor;
+    color: white;
+}
+
+.our-medics .slick-dots button::before
+{
+	display: none;
+}
+
+.our-medics .slick-dots button
+{
+    width: 25px;
+    height: auto;
+	vertical-align: middle;
+	text-align: center;
+    line-height: inherit;
+    visibility: visible !important;
+    background-color: transparent;
+	font-size: inherit;
+    color: black;
+	cursor: pointer;
+}
+
+.our-medics .slick-dots button:hover
+{
+ 	background: url(/local/icon/slider-numb-bg.png) center no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain;
+	color: white;
+}
+
+/* FOOTER */
+@import '../footer/footer.scss';
+
+/* MODALS */
+@import '../system/modals.scss';

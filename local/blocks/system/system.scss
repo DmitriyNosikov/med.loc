@@ -1,0 +1,46 @@
+/* System */
+.anim
+{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.anim-long
+{
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.has-error
+{
+	border-color: #a94442;
+	color: #a94442;
+}
+
+.has-success
+{
+	border-color: #3c763d;
+	color: #3c763d;
+}
+
+.fixed-top
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	z-index: 101;
+}
+
+.absolute-top
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	z-index: 101;
+}

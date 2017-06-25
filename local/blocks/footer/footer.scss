@@ -1,0 +1,92 @@
+@import '../colors/colors.scss';
+@import '../system/system.scss';
+
+footer
+{
+	color: $textColor;
+	padding: 20px;
+}
+
+footer
+{
+	background-color: #f4f5f5;
+}
+
+.footer__item-link,
+.footer-item__pay-text,
+.footer-item__pay-info
+{
+	font-size: $lowTextSize;
+}
+
+.footer__item-link
+{
+	display: block;
+	margin-bottom: 20px;
+	text-decoration: underline;
+	color: $textColor;
+}
+
+.footer__item-link:hover
+{
+	text-decoration: none;
+	color: $buttonColor !important;
+}
+
+.footer__item-link_right
+{
+	text-align: right;
+}
+
+.footer-item__pay-logo
+{
+	display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.footer-item__pay-text
+{
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-item__pay-info
+{
+	display: block;
+	margin: 40px -15px 0px;
+	padding: 0px;
+}
+
+.footer__item-soc_right
+{
+	text-align: right;
+}
+
+.footer__item-soc
+{
+	display: inline-block;
+	margin-right: 10px;
+    background-color: $buttonColor;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+}
+
+.footer__item-soc:last-child
+{
+	margin-right: 0px;
+}
+
+.footer__item-soc:hover
+{
+	background-color: $buttonActiveColor;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+	        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.footer__item-soc img
+{
+	width: 50px;
+    padding: 10px;
+}
