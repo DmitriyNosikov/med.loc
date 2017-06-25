@@ -6,20 +6,20 @@
 				<div class="container">
 					<div class="row">
 						<div class="header-line">
-							<div class="col-md-3">
+							<div class="col-xs-6 col-md-6 col-lg-3">
 								<div class="logo">
 									<a href="/">
 										<img src="/local/images/logo.png" alt="Сайт онлайн консультаций медецинских экспертов">
 									</a>
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-xs-6 col-md-6 col-lg-3">
 								<div class="header-prone">
 									<img class="header-phone__icon" src="/local/icon/phone.png" alt="">
 									<a href="tel:88004567899" class="header-phone__text">8 800 456 7899</a>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="col-xs-12 col-md-12 col-lg-6">
 								<noindex>
 									<div class="header-action">
 										<a class="header-action__enter anim" href="#">Войти</a>

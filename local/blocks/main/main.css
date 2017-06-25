@@ -1447,8 +1447,20 @@ footer {
     width: 250px;
     margin: 10px auto 0px;
   }
+  .footer__item-link {
+    text-align: center;
+  }
+  .footer-item__pay-logo {
+    display: block;
+    margin: 0px auto;
+  }
   .footer-item__pay-text {
+    display: block;
     margin-top: 10px;
+    text-align: center;
+  }
+  .footer__item-soc_right {
+    text-align: center;
   }
   .our-medics__item {
     padding: 50px 14px;

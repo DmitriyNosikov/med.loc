@@ -1031,3 +1031,86 @@ body
 
 /* MODALS */
 @import '../system/modals.scss';
+
+/*////////////////////////////////////////////////////////////////
+///////////////////////// АДАПТИВНОСТЬ ///////////////////////////
+////////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 1920px)
+{
+}
+
+@media screen and (min-width: 1445px)
+{
+}
+
+@media screen and (min-width: 1300px)
+{
+}
+
+@media screen and (max-width: 1200px)
+{
+	.footer-item__pay-logo{margin-right: 5px;}
+    .footer__item-link, .footer-item__pay-text, .footer-item__pay-info{font-size: 14px;}
+
+}
+
+@media screen and (max-width: 1024px)
+{
+}
+
+@media screen and (max-width: 990px)
+{
+    .footer__item-link{text-align: center;}
+    .footer-item__pay-logo{display: block; margin: 0px auto;}
+    .footer-item__pay-text{display: block; margin-top: 10px; text-align: center;}
+    .footer__item-soc_right{text-align: center;}
+}
+
+/* APPLE IPAD */
+@media screen and (max-width: 770px)
+{
+}
+
+@media screen and (max-width: 700px)
+{
+    footer .footer-block, footer .footer__item-link_right{display: block; float: none; width: 100%; text-align: center;}
+}
+
+@media screen and (max-width: 667px)
+{
+}
+
+@media screen and (max-width: 600px)
+{
+    .header-action{display: block; width: 95%; margin: 0px auto;}
+    .header-action > a{display: block; width: 100%; margin-bottom: 15px;}
+}
+	
+@media screen and (max-width: 568px)
+{
+}
+		
+@media screen and (max-width: 515px)
+{
+}
+
+@media screen and (max-width: 460px)
+{
+	.header-line .col-xs-6{display: block; width: 100%;}
+}
+
+@media screen and (max-width: 414px)
+{
+}
+	
+@media screen and (max-width: 380px)
+{
+}
+
+@media screen and (max-width: 320px)
+{
+}
+/* Для Nokia N8 640x360	 */
+@media screen and (max-width: 240px)
+{
+}
