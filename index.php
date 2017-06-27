@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="/local/blocks/main/main.css">
 
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="/local/blocks/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="/local/blocks/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="/local/blocks/bootstrap/bootstrap-theme.css">
 
 	<!-- Flicker Slider -->
