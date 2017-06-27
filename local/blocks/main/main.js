@@ -141,8 +141,6 @@ $(function(){
 
 		clientWidth = window.innerWidth;
 
-		console.log(clientWidth);
-
 		if(clientWidth < 770)
 		{
 			slidesPerPage = 1;
@@ -160,6 +158,25 @@ $(function(){
 				slidesToScroll: slidesPerPage
 			});
 		}
+		//Допусловие, чтобы слайдер возвращался в исходное состояние
+		//при настягивании окна обратно. Данный функционал не особо нужен.
+		// else if(addNewSlider)
+		// {
+		// 	addNewSlider = false;
+		// 	slidesPerPage = 2;
+
+		// 	$('.our-medics .regular').empty();
+		// 	$('.our-medics .regular').attr('class', 'regular');
+		// 	$('.our-medics .regular').html(sliderHTML);
+
+		// 	$(".regular").slick({
+		// 		dots: true,
+		// 		arrows: true,
+		// 		infinite: true,
+		// 		slidesToShow: slidesPerPage,
+		// 		slidesToScroll: slidesPerPage
+		// 	});
+		// }
 	};
 
 	window.onresize = function(){

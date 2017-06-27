@@ -1131,82 +1131,6 @@ body {
   z-index: 101;
 }
 
-footer {
-  color: #5f6465;
-  padding: 20px;
-}
-
-footer {
-  background-color: #f4f5f5;
-}
-
-.footer__item-link,
-.footer-item__pay-text,
-.footer-item__pay-info {
-  font-size: 18px;
-}
-
-.footer__item-link {
-  display: block;
-  margin-bottom: 20px;
-  text-decoration: underline;
-  color: #5f6465;
-}
-
-.footer__item-link:hover {
-  text-decoration: none;
-  color: #32abaa !important;
-}
-
-.footer__item-link_right {
-  text-align: right;
-}
-
-.footer-item__pay-logo {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-  margin-right: 10px;
-}
-
-.footer-item__pay-text {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.footer-item__pay-info {
-  display: block;
-  margin: 40px -15px 0px;
-  padding: 0px;
-}
-
-.footer__item-soc_right {
-  text-align: right;
-}
-
-.footer__item-soc {
-  display: inline-block;
-  margin-right: 10px;
-  background-color: #32abaa;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
-
-.footer__item-soc:last-child {
-  margin-right: 0px;
-}
-
-.footer__item-soc:hover {
-  background-color: #eeaebd;
-  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-}
-
-.footer__item-soc img {
-  width: 50px;
-  padding: 10px;
-}
-
 /* MODALS */
 .modal-container {
   display: none;
@@ -1469,6 +1393,171 @@ footer {
 
 .modal-container__reg-accept-all label span {
   width: 70%;
+}
+
+/*////////////////////////////////////////////////////////////////
+///////////////////////// АДАПТИВНОСТЬ ///////////////////////////
+////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 600px) {
+  .modal-form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .modal-container__close-btn {
+    width: 20px;
+    height: 20px;
+  }
+  .modal-container__header {
+    font-size: 36px;
+  }
+  .modal-form input[type="text"],
+  .modal-container__enter .form-group,
+  .modal-form__phone_group select,
+  .modal-container__reg input[type="password"] {
+    font-size: 20px;
+  }
+  .modal-container__enter-reg {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .modal-container__enter-go-enter,
+  .modal-container__reg-go-reg,
+  .modal-container__go-cons {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .modal-container__enter-reg {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .modal-container__header {
+    font-size: 32px;
+  }
+  .modal-container__enter-go-enter,
+  .modal-container__reg-go-reg,
+  .modal-container__go-cons {
+    font-size: 18px;
+  }
+  .modal-form__phone_group select {
+    width: 30%;
+  }
+  .modal-form__phone_group input[type="text"] {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .modal-container__header {
+    font-size: 26px;
+  }
+  .modal-container__enter-go-enter,
+  .modal-container__reg-go-reg,
+  .modal-container__go-cons {
+    font-size: 16px;
+  }
+  .modal-form input[type="text"],
+  .modal-container__enter .form-group,
+  .modal-form__phone_group select,
+  .modal-container__reg input[type="password"] {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .modal-container__header {
+    font-size: 24px;
+  }
+  .modal-container__enter-go-enter,
+  .modal-container__reg-go-reg,
+  .modal-container__go-cons {
+    font-size: 14px;
+  }
+}
+
+/* Для Nokia N8 640x360	 */
+footer {
+  color: #5f6465;
+  padding: 20px;
+}
+
+footer {
+  background-color: #f4f5f5;
+}
+
+.footer__item-link,
+.footer-item__pay-text,
+.footer-item__pay-info {
+  font-size: 18px;
+}
+
+.footer__item-link {
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  color: #5f6465;
+}
+
+.footer__item-link:hover {
+  text-decoration: none;
+  color: #32abaa !important;
+}
+
+.footer__item-link_right {
+  text-align: right;
+}
+
+.footer-item__pay-logo {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.footer-item__pay-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-item__pay-info {
+  display: block;
+  margin: 40px -15px 0px;
+  padding: 0px;
+}
+
+.footer__item-soc_right {
+  text-align: right;
+}
+
+.footer__item-soc {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #32abaa;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.footer__item-soc:last-child {
+  margin-right: 0px;
+}
+
+.footer__item-soc:hover {
+  background-color: #eeaebd;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.footer__item-soc img {
+  width: 50px;
+  padding: 10px;
 }
 
 /*////////////////////////////////////////////////////////////////

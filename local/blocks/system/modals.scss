@@ -300,3 +300,72 @@
 {
 	width: 70%;
 }
+
+/*////////////////////////////////////////////////////////////////
+///////////////////////// АДАПТИВНОСТЬ ///////////////////////////
+////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 600px)
+{
+	.modal-form{width: 90%;}
+}
+
+@media screen and (max-width: 550px)
+{
+	.modal-container__close-btn{width: 20px; height: 20px;}
+	.modal-container__header{font-size: 36px;}
+	.modal-form input[type="text"], 
+	.modal-container__enter .form-group,
+	.modal-form__phone_group select, 
+	.modal-container__reg input[type="password"]{font-size: 20px;}
+	.modal-container__enter-reg{width: 50%;}
+}
+	
+@media screen and (max-width: 530px)
+{
+	.modal-container__enter-go-enter, 
+	.modal-container__reg-go-reg,
+	.modal-container__go-cons{width: 80%; font-size: 20px}
+}
+
+@media screen and (max-width: 490px)
+{
+	.modal-container__enter-reg{width: 60%;}
+}	
+
+@media screen and (max-width: 450px)
+{
+	.modal-container__header{font-size: 32px;}
+	.modal-container__enter-go-enter,
+	.modal-container__reg-go-reg,
+	.modal-container__go-cons{font-size: 18px;}
+	.modal-form__phone_group select{width: 30%;}
+	.modal-form__phone_group input[type="text"]{width: 60%;}
+}
+
+@media screen and (max-width: 390px)
+{
+	.modal-container__header{font-size: 26px;}
+	.modal-container__enter-go-enter,
+	.modal-container__reg-go-reg,
+	.modal-container__go-cons{font-size: 16px;}
+	.modal-form input[type="text"], 
+	.modal-container__enter .form-group,
+	.modal-form__phone_group select, 
+	.modal-container__reg input[type="password"]{font-size: 18px;}
+}
+
+@media screen and (max-width: 365px)
+{
+	.modal-container__header{font-size: 24px;}
+	.modal-container__enter-go-enter,
+	.modal-container__reg-go-reg,
+	.modal-container__go-cons{font-size: 14px;}
+}
+
+@media screen and (max-width: 320px)
+{
+}
+/* Для Nokia N8 640x360	 */
+@media screen and (max-width: 240px)
+{
+}

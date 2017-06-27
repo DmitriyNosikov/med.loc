@@ -1,10 +1,12 @@
 var gulp = require('gulp'),
-	sass = require('gulp-sass'),
-	autoprefixer = require('gulp-autoprefixer');
+	  sass = require('gulp-sass'),
+	  autoprefixer = require('gulp-autoprefixer'),
+    cssglobbing = require('gulp-css-globbing');
 
 gulp.task('sass', function () {
   return gulp.src(['./local/blocks/**/*sass', './local/blocks/**/*scss'])
     .pipe(sass({outputStyle: "expanded"}).on("error", sass.logError))
+    .pipe(cssglobbing())
     .pipe(gulp.dest('./local/blocks/'));
 });
  
