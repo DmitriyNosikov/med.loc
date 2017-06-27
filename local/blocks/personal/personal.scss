@@ -1094,6 +1094,11 @@ body
 {
 }
 
+@media screen and (max-width: 505px)
+{
+	.navbar-nav > li{display: block !important; border-bottom: 1px solid rgba(240, 240, 237, 0.5); margin-bottom: 10px;}
+}
+
 @media screen and (max-width: 460px)
 {
 	.header-line .col-xs-6{display: block; width: 100%;}

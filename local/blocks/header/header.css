@@ -155,6 +155,7 @@ header {
 .header-menu .navbar-nav {
   display: block;
   width: 100%;
+  margin: 0px auto;
   text-align: center;
 }
 

@@ -203,6 +203,7 @@ header {
 .header-menu .navbar-nav {
   display: block;
   width: 100%;
+  margin: 0px auto;
   text-align: center;
 }
 
@@ -1556,6 +1557,14 @@ footer {
     display: block;
     width: 100%;
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .navbar-nav > li {
+    display: block !important;
+    border-bottom: 1px solid rgba(240, 240, 237, 0.5);
+    margin-bottom: 10px;
   }
 }
 

@@ -209,6 +209,7 @@ header {
 .header-menu .navbar-nav {
   display: block;
   width: 100%;
+  margin: 0px auto;
   text-align: center;
 }
 
@@ -1679,6 +1680,10 @@ footer {
 }
 
 @media screen and (max-width: 505px) {
+  .navbar-nav > li {
+    display: block !important;
+    border-bottom: 1px solid rgba(240, 240, 237, 0.2);
+  }
   .our-medics__item-more {
     width: 55% !important;
   }

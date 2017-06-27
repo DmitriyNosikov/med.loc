@@ -986,6 +986,8 @@ body
 
 @media screen and (max-width: 505px)
 {
+    .navbar-nav > li{display: block !important; border-bottom: 1px solid rgba(240, 240, 237, 0.2);}
+
     //Slider
     .our-medics__item-more{width: 55% !important;}
     .our-medics__item-cons{width: 75% !important;}
