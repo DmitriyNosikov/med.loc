@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Circe-Regular';
+  src: url("/local/blocks/fonts/Circe-Regular.eot");
+  src: url("/local/blocks/fonts/Circe-Regular.eot?#iefix") format("embeded-opentype"), url("/local/blocks/fonts/Circe-Regular.svg#webfont") format("svg"), url("/local/blocks/fonts/Circe-Regular.woff") format("woff"), url("/local/blocks/fonts/Circe-Regular.ttf") format("truetype");
+}
+
 /* System */
 .anim {
   -webkit-transition: all 0.2s ease-in-out;
@@ -37,6 +43,11 @@
   display: block;
   width: 100%;
   z-index: 101;
+}
+
+body {
+  font-family: "Circe-Regular", "Roboto", Helvetica, "Open Sans", Arial, sans-serif, serif !important;
+  font-size: 14px;
 }
 
 header {
@@ -81,7 +92,7 @@ header {
 .header-action__reg,
 .header-action__feedback {
   padding: 10px 25px;
-  margin-right: 10px;
+  margin-right: 5px;
   border: 2px solid #6b7b80;
   -webkit-border-radius: 31px;
   border-radius: 31px;

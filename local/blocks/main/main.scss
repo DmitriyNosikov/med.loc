@@ -1,19 +1,9 @@
-@import '../system/fonts.scss';
-@import '../colors/colors.scss';
-@import '../system/system.scss';
-
 @mixin title
 {	
 	margin: 50px 0;
 	font-size: $titleSize;
 	font-weight: bold;
 	color: $titleColor;
-}
-
-body
-{
-	font-family: $main-font !important;
-	font-size: 14px;
 }
 
 /* Header */
@@ -909,6 +899,9 @@ body
 
 @media screen and (max-width: 660px)
 {
+    .send-feedback__title{font-size: 50px;}
+    .send-feedback__text{font-size: 26px;}
+    .send-feedback__btn{font-size: 20px;}
     .triggers-block__img-item{padding: 35px 30px;}
 }
 
@@ -935,10 +928,10 @@ body
 {
     .header-action{display: block; width: 95%; margin: 0px auto;}
     .header-action > a{display: block; width: 100%; margin-bottom: 15px;}
+    .send-feedback__title{font-size: 44px;}
+    .send-feedback__text{font-size: 20px;}
+    .send-feedback__btn{font-size: 18px;}
     .flickerplate{height: 1100px !important;}
-    .send-feedback__title{font-size: 50px;}
-    .send-feedback__text{font-size: 26px;}
-    .send-feedback__btn{font-size: 20px;}
     .triggers-block-2__item img{max-width: 30%;}
     .triggers-block h2, .triggers-block-2__title, .get-consultation h2, 
     .our-services h2, .our-medics h2, .our-questions h2{font-size: 45px;}
@@ -975,9 +968,6 @@ body
      
 @media screen and (max-width: 515px)
 {
-    .send-feedback__title{font-size: 44px;}
-    .send-feedback__text{font-size: 20px;}
-    .send-feedback__btn{font-size: 18px;}
     .consultation-info__item h2{font-size: 30px;}
     .consultation-info__item p{font-size: 18px;}
     .our-questions__item-header{padding: 10px 0px 10px 5px;}

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Header */
 @font-face {
   font-family: 'Circe-Regular';
   src: url("/local/blocks/fonts/Circe-Regular.eot");
@@ -51,48 +52,6 @@ body {
   font-size: 14px;
 }
 
-/* Header */
-/* System */
-.anim {
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.anim-long {
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.has-error {
-  border-color: #a94442;
-  color: #a94442;
-}
-
-.has-success {
-  border-color: #3c763d;
-  color: #3c763d;
-}
-
-.fixed-top {
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 100%;
-  z-index: 101;
-}
-
-.absolute-top {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 100%;
-  z-index: 101;
-}
-
 header {
   position: relative;
 }
@@ -135,7 +94,7 @@ header {
 .header-action__reg,
 .header-action__feedback {
   padding: 10px 25px;
-  margin-right: 10px;
+  margin-right: 5px;
   border: 2px solid #6b7b80;
   -webkit-border-radius: 31px;
   border-radius: 31px;
@@ -1541,6 +1500,15 @@ footer {
 }
 
 @media screen and (max-width: 660px) {
+  .send-feedback__title {
+    font-size: 50px;
+  }
+  .send-feedback__text {
+    font-size: 26px;
+  }
+  .send-feedback__btn {
+    font-size: 20px;
+  }
   .triggers-block__img-item {
     padding: 35px 30px;
   }
@@ -1587,17 +1555,17 @@ footer {
     width: 100%;
     margin-bottom: 15px;
   }
-  .flickerplate {
-    height: 1100px !important;
-  }
   .send-feedback__title {
-    font-size: 50px;
+    font-size: 44px;
   }
   .send-feedback__text {
-    font-size: 26px;
+    font-size: 20px;
   }
   .send-feedback__btn {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .flickerplate {
+    height: 1100px !important;
   }
   .triggers-block-2__item img {
     max-width: 30%;
@@ -1654,15 +1622,6 @@ footer {
 }
 
 @media screen and (max-width: 515px) {
-  .send-feedback__title {
-    font-size: 44px;
-  }
-  .send-feedback__text {
-    font-size: 20px;
-  }
-  .send-feedback__btn {
-    font-size: 18px;
-  }
   .consultation-info__item h2 {
     font-size: 30px;
   }
