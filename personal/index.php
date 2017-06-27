@@ -32,16 +32,16 @@
 	?>
 
 	<section class="personal-page">
-		<div class="personal-page__menu">
+		<div class="hidden-xs personal-page__menu">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="container">
 						<div class="personal-page__header">
 							<div class="row">
-								<div class="col-md-3">Мои данные</div>
-								<div class="col-md-3">Баланс</div>
-								<div class="col-md-3">Мои консультации</div>
-								<div class="col-md-3">Документы</div>
+								<div class="col-md-3 col-lg-3">Мои данные</div>
+								<div class="col-md-3 col-lg-3">Баланс</div>
+								<div class="col-md-3 col-lg-3">Мои консультации</div>
+								<div class="col-md-3 col-lg-3">Документы</div>
 							</div>
 						</div>
 					</div>
@@ -54,7 +54,8 @@
 					<div class="container">
 						<div class="personal-page__body">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-xs-12 col-md-3 col-lg-3">
+									<div class="hidden-md hidden-lg hidden-col-header">Мои данные</div>
 									<div class="user-personal-info">
 										<form action="" name="user-information" method="POST" enctype="multipart/form-data">
 											<div class="personal-page__user-photo">
@@ -97,13 +98,15 @@
 										</form>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-xs-12 col-md-3 col-lg-3">
+									<div class="hidden-md hidden-lg hidden-col-header">Баланс</div>
 									<div class="user-balance">
 										<span class="user-balance__val">0 &#8381;</span>
 										<a href="#" class="user-balanse__add anim">Пополнить баланс</a>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-xs-12 col-md-3 col-lg-3">
+									<div class="hidden-md hidden-lg hidden-col-header">Мои консультации</div>
 									<div class="user-cons__item">
 										<div class="user-cons__item-date">12.05.2017</div>
 										<div class="user-cons__item-fio">Богданова Людмила Петровна</div>
@@ -117,7 +120,8 @@
 										<div class="user-cons__item-fio">Богданова Людмила Петровна</div>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-xs-12 col-md-3 col-lg-3">
+									<div class="hidden-md hidden-lg hidden-col-header">Документы</div>
 									<div class="user-documents__form">
 										<form action="" method="POST" name="user-documents__upload">
 											<label>
