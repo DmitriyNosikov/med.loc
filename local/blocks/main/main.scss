@@ -826,6 +826,13 @@
     .consultation-info__item p{font-size: 22px;}
 }
 
+@media screen and (max-width: 995px)
+{
+    //Slick Slider
+    .our-medics__item{padding: 50px 14px;}
+    .our-medics__all a{width: 30%;}
+}
+
 @media screen and (max-width: 990px)
 {
     .triggers-block__img-item{width: 100%; margin: 15px 0px; height: auto;}
@@ -846,10 +853,6 @@
     .footer-item__pay-logo{display: block; margin: 0px auto;}
     .footer-item__pay-text{display: block; margin-top: 10px; text-align: center;}
     .footer__item-soc_right{text-align: center;}
-
-     //Slick Slider
-    .our-medics__item{padding: 50px 14px;}
-    .our-medics__all a{width: 30%;}
 }
 
 @media screen and (max-width: 850px)
@@ -869,7 +872,7 @@
     //Slider
     .our-medics__item-more{width: 30% !important;}
     .our-medics__item-cons{width: 50% !important;}
-    .our-medics__item h3, .medic-info{width: 50%; margin-left: auto; margin-right: auto;}
+    .our-medics__item h3, .medic-info{display: block; width: 50%; margin-left: auto; margin-right: auto;}
 }
 
 @media screen and (max-width: 760px)
@@ -1043,6 +1046,8 @@
 {
     .our-medics__item-more{width: 65% !important;}
     .our-medics__item-cons{width: 95% !important;}
+    .our-medics__item-more, .our-medics__item-cons{font-size: 16px;}
+    .our-medics__all a{width: 60%; font-size: 20px;}
 }
 
 @media screen and (max-width: 390px)
@@ -1059,6 +1064,12 @@
     .triggers-block-2__item img{display: block; margin: 0px auto;}
     .triggers-block-2__item h2{display: block; margin: 20px auto 10px; text-align: center;}
     .triggers-block-2__item p{text-align: center; font-size: 18px;}
+}
+
+@media screen and (max-width: 350px)
+{
+    .our-medics__item-more, .our-medics__item-cons{font-size: 14px;}
+    .our-medics__all a{width: 70%; font-size: 18px;}
 }
 
 @media screen and (max-width: 320px)

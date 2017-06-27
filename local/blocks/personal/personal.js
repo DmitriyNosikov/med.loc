@@ -9,7 +9,6 @@ $(function(){
 			var formData = new FormData();
 			formData.append('userNewPhoto', file);
 		}
-		console.log(typeof(file.name));
 	});
 
 	//Календарь с расписанием врача
@@ -40,18 +39,4 @@ $(function(){
 			targetTab.addClass('tab-active');
 		}
 	});
-
-	//Init main slick slider
-	var slickSlider = $(".regular");
-
-	if(typeof(slickSlider) !== 'undefined' && slickSlider.length > 0)
-	{
-		slickSlider.slick({
-			dots: true,
-			arrows: true,
-			infinite: true,
-			slidesToShow: 2,
-			slidesToScroll: 2
-	  });
-	}
 });
