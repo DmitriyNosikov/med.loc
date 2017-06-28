@@ -34,11 +34,11 @@
 	<section class="operator-cons">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-xs-12">
 					<h1>Консультация дежурного врача</h1>
 					<h2>Один из наших лучших врачей примет Вас в течение нескольких минут</h2>
 				</div>
-				<div class="col-md-6">
+				<div class="col-xs-12 col-md-6 col-lg-6">
 					<div class="operator-cons__item operator-cons__item-one">
 						<h3 class="operator-cons__item-title">Врач терапевт</h3>
 						<p class="operator-cons__item-text">Занимается диагностикой, лечением и профилактикой заболеваний внутренних органов. Это первый специалист, к которому обращаются люди с любой проблемой, возникшей с их здоровьем.</p>
@@ -46,7 +46,7 @@
 						<span class="operator-cons__item-price">Стоимость консультации 800 &#8381;</span>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-xs-12 col-md-6 col-lg-6">
 					<div class="operator-cons__item operator-cons__item-two">
 						<h3 class="operator-cons__item-title">Врач педиатр</h3>
 						<p class="operator-cons__item-text">Специализируется на диагностике, лечении и профилактике заболеваний у детей с рождения и до достижения ими 18 лет.</p>
@@ -54,13 +54,12 @@
 						<span class="operator-cons__item-price">Стоимость консультации 800 &#8381;</span>
 					</div>
 				</div>
-				<div class="col-md-12">
+				<div class="col-xs-12">
 					<div class="operator-cons__item-more">
 						<span class="operator-cons__item-or">или</span>
 						<a href="#" class="operator-cons__item-prof">Записаться к профильному специалисту</a>
 					</div>
 				</div>
-				<div class="col-md-6"></div>
 			</div>
 		</div>
 	</section>
@@ -68,10 +67,10 @@
 	<section class="our-medics">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-xs-12">
 					<h1>Наши врачи</h1>
 				</div>
-				<div class="col-md-12">
+				<div class="col-xs-12">
 					<div class="our-medics__filter">
 						<a href="#" class="our-medics__filter-item our-medics__filter-item-active">Все врачи</a>
 						<a href="#" class="our-medics__filter-item">Для взрослых</a>
@@ -93,7 +92,7 @@
 			</div>
 			<div class="row">
 				<div class="our-medics__list">
-					<div class="col-md-12">
+					<div class="col-xs-12">
 						<div class="our-medics__list-item">
 							<div class="medic-photo">
 								<img class="medic-photo__img" src="/local/images/medic-photo-1.jpg" alt="Францман Ольга Ивановна">
@@ -115,7 +114,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-xs-12">
 						<div class="our-medics__list-item">
 							<div class="medic-photo">
 								<img class="medic-photo__img" src="/local/images/medic-photo-1.jpg" alt="Францман Ольга Ивановна">
@@ -137,7 +136,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-xs-12">
 						<div class="our-medics__list-item">
 							<div class="medic-photo">
 								<img class="medic-photo__img" src="/local/images/medic-photo-1.jpg" alt="Францман Ольга Ивановна">
@@ -159,7 +158,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-xs-12">
 						<div class="our-medics__list-item">
 							<div class="medic-photo">
 								<img class="medic-photo__img" src="/local/images/medic-photo-1.jpg" alt="Францман Ольга Ивановна">

@@ -1056,6 +1056,24 @@ body
     .our-medics__item h3{font-size: 24px;}
     .medic-info__spec, .medic-info__prof, .medic-info__exp, .medic-info__city{font-size: 20px;}
     .our-medics__item-cons{width: 85%;}
+
+    //Med list
+    .operator-cons__item-text, .operator-cons__item-btn{font-size: 20px;}
+    .operator-cons__item-btn{width: 95%; padding: 10px 14px;}
+    .operator-cons__item-two .operator-cons__item-text{margin-bottom: 46px;}
+    .operator-cons h2{font-size: 28px;}
+    .operator-cons h1, .our-medics h1{font-size: 46px;}
+    .our-medics__filter-item, .filter-item__spec-block{font-size: 22px;}
+    .filter-item__spec-block label{margin-left: 35px;}
+    .medic-photo__img{max-width: 100%; max-height: 220px;}
+    .medic-info h2{font-size: 22px;}
+    .medic-photo, .medic-info, .medic-cons{margin-right: 14px;}
+    .medic-info-list__spec, .medic-info-list__prof, .medic-info-list__exp, .medic-info-list__city{font-size: 20px;}
+    .medic-cons__text, .about-price__text{font-size: 24px;}
+    .medic-cons__price, .about-price__price{font-size: 28px;}
+    .medic-photo{width: 25%;}
+    .medic-info{width: 30%;}
+    .medic-cons{padding: 30px 0px 0px 30px;}
 }
 
 @media screen and (max-width: 1024px)
@@ -1082,6 +1100,18 @@ body
 	.user-info__phone input[type="text"]{display: inline-block; width: 50%; margin-left: 20px;}
 	.user-personal-info form input[type="submit"], .personal-page__user-pass form input[type="submit"]{width: 50%; margin: 40px auto; font-size: 20px;}
 	.user-balanse__add{margin: 15px auto;}
+
+	//Med list
+	.operator-cons__item{height: auto; padding: 40px;}
+	.our-medics__filter{margin-bottom: 30px;}
+	.our-medics__filter-item{width: 48%; margin-bottom: 5px;}
+	.filter-item__spec-block{display: block; width: 100%; margin: 20px 0px;}
+	.filter-item__spec-block label{margin-left: 0px;}
+	.medic-photo, .our-medics__list .medic-info{display: inline-block; width: 49%;}
+    .medic-photo, .medic-info, .medic-cons{margin-right: 0px;}
+    .medic-photo__img{margin: 0px auto;}
+    .medic-photo__more{width: 80%; margin: 14px auto 0px;}
+    .medic-cons{display: block; width: 80%; margin: 40px auto 0px; padding: 0px; text-align: center;}
 }
 
 /* APPLE IPAD */
@@ -1115,25 +1145,40 @@ body
 {
 }
 
-@media screen and (max-width: 600px)
-{
-    .header-action{display: block; width: 95%; margin: 0px auto;}
-    .header-action > a{display: block; width: 100%; margin-bottom: 15px;}
-    .our-medics__item-cons{width: 80%;}
-}
-
 @media screen and (max-width: 630px)
 {
 	//Slider
     .our-medics__item-more{width: 45% !important;}
     .our-medics__item-cons{width: 65% !important;}
     .our-medics__all a{width: 40%;}
+
+    //Med list
+    .operator-cons h1, .our-medics h1{font-size: 44px;}
+    .operator-cons h2{font-size: 26px;}
+    .operator-cons__item{padding: 25px;}
+    .operator-cons__item-btn{width: 90%;}
+    .operator-cons__item-more{font-size: 24px;}
+    .medic-photo__more{width: 90%;}
 }
 
 @media screen and (max-width: 615px)
 {
     //Slider
     .our-medics__item h3, .medic-info{width: 70%;}
+}
+
+@media screen and (max-width: 600px)
+{
+    .header-action{display: block; width: 95%; margin: 0px auto;}
+    .header-action > a{display: block; width: 100%; margin-bottom: 15px;}
+    .our-medics__item-cons{width: 80%;}
+
+    //Med list
+    .medic-photo, .our-medics__list-item .medic-info{display: block;}
+    .medic-photo{width: 100%;}
+    .our-medics__list-item .medic-info{width: 70%; margin: 0px auto;}
+    .medic-photo{margin-bottom: 25px;}
+    .medic-photo__more{width: 50%;}
 }
 
 @media screen and (max-width: 560px)
@@ -1162,10 +1207,26 @@ body
     .our-medics__all a{width: 50%;}
 }
 
+@media screen and (max-width: 500px)
+{
+	.operator-cons__item-more{font-size: 22px;}
+
+	//Med list
+	.our-medics__list-item .medic-info{width: 80%;}
+}
+
 @media screen and (max-width: 480px)
 {
     //Slider
     .our-medics__item h3, .medic-info{width: 90%;}
+
+    //Med list
+    .operator-cons h1, .our-medics h1{font-size: 40px;}
+    .operator-cons h2{font-size: 24px;}
+    .operator-cons__item-btn{width: 95%;}
+    .operator-cons__item-title{font-size: 34px;}
+    .operator-cons__item-text, .operator-cons__item-btn{font-size: 18px;}
+    .operator-cons__item-price{font-size: 20px;}
 }
 
 @media screen and (max-width: 460px)
@@ -1173,6 +1234,11 @@ body
 	.header-line .col-xs-6{display: block; width: 100%;}
 	.user-info__phone select, .user-info__phone input[type="text"]{display: block; width: 50%;}
 	.user-info__phone input[type="text"]{margin-left: auto;}
+
+	//Med list
+	.medic-photo__more{width: 70%;}
+	.medic-cons__text{font-size: 22px;}
+	.medic-cons__get-cons{padding: 10px 15px; font-size: 20px;}
 }
 
 @media screen and (max-width: 450px)
@@ -1184,11 +1250,30 @@ body
     .our-medics__all a{width: 50%;}
 }
 
+@media screen and (max-width: 440px)
+{
+	.operator-cons__item-more{font-size: 20px;}
+
+	//Med list
+	.our-medics__list-item .medic-info{width: 85%;}
+}
+
+@media screen and (max-width: 425px)
+{
+	.operator-cons__item-btn{width: 100%;}
+	.operator-cons__item-title{font-size: 32px;}
+    .operator-cons__item-text, .operator-cons__item-btn{font-size: 16px;}
+    .operator-cons__item-price, .operator-cons__item-more{font-size: 18px;}
+}
+
 @media screen and (max-width: 414px)
 {
 	//Slider
     .our-medics__item h3{font-size: 22px;}
     .medic-info__spec, .medic-info__prof, .medic-info__exp, .medic-info__city{font-size: 18px;}
+
+    //Med list
+	.our-medics__list-item .medic-info{width: 100%;}
 }
 
 @media screen and (max-width: 405px)
@@ -1197,6 +1282,11 @@ body
     .our-medics__item-cons{width: 95% !important;}
     .our-medics__item-more, .our-medics__item-cons{font-size: 16px;}
     .our-medics__all a{width: 60%; font-size: 20px;}
+
+    //Med list
+    .medic-cons{width: 100%;}
+    .medic-cons__text{font-size: 20px;}
+    .medic-cons__get-cons{font-size: 18px;}
 }
 
 @media screen and (max-width: 400px)
@@ -1206,6 +1296,11 @@ body
 
 @media screen and (max-width: 380px)
 {
+	.operator-cons h1, .our-medics h1{font-size: 36px;}
+    .operator-cons h2{font-size: 20px; margin-bottom: 40px;}
+	.operator-cons__item-title{font-size: 30px;}
+    .operator-cons__item-text, .operator-cons__item-btn{font-size: 14px;}
+    .operator-cons__item-price{font-size: 16px;}
 }
 
 @media screen and (max-width: 350px)
