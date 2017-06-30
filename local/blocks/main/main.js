@@ -68,18 +68,22 @@ $(function(){
 	{
 		var $this = $(e),
 			activeModal = $('.modal-active'),
-			activeModalBG = $('.modal-bg-active')
+			// activeModalBG = $('.modal-bg-active')
 			activeModalContainer = $('.modal-container-active');
 
 		if(activeModal.length > 0)
 		{
 			activeModal.removeClass('modal-active');
-			activeModalBG.removeClass('modal-bg-active');
+			// activeModalBG.removeClass('modal-bg-active');
 			activeModalContainer.removeClass('modal-container-active');
 
 			activeModal.fadeOut(200);
-			activeModalBG.fadeOut(50)
+			// activeModalBG.fadeOut(50)
 			activeModalContainer.fadeOut();
+
+			//Убираем блокировку скролла на body и html (для IE)
+			$('body').removeClass('lock-scroll');
+			$('html').removeClass('lock-scroll');
 		}
 	}
 
@@ -105,18 +109,22 @@ $(function(){
 	function openModal(target)
 	{
 		var target = $(target),
-			modalBG = $('.modal-bg'),
+			// modalBG = $('.modal-bg'),
 			modalContainer = $('.modal-container');
 
 		if(target.length > 0)
 		{
 			target.addClass('modal-active');
-			modalBG.addClass('modal-bg-active');
+			// modalBG.addClass('modal-bg-active');
 			modalContainer.addClass('modal-container-active');
 
 			target.fadeIn(200);
-			modalBG.fadeIn(50);
+			// modalBG.fadeIn(50);
 			modalContainer.fadeIn();
+
+			//Добавляем блокировку скролла на body и html (для IE)
+			$('body').addClass('lock-scroll');
+			$('html').addClass('lock-scroll');
 		}
 	}
 
