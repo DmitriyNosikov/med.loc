@@ -921,6 +921,8 @@ body {
 
 .med-detail__diplomas {
   text-align: center;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .med-detail__diplomas-title {

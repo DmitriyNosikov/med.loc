@@ -15,6 +15,9 @@
 	<link rel="stylesheet" href="/local/blocks/slick/slick.css">
 	<link rel="stylesheet" href="/local/blocks/slick/slick-theme.css">
 
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="/local/blocks/fancybox/jquery.fancybox.min.css">
+
 	<!-- Ion Calendar -->
 	<link rel="stylesheet" href="/local/blocks/ion.calendar/ion.calendar.css">
 
@@ -29,6 +32,9 @@
 
 	<!-- Slick Slider -->
 	<script src="/local/blocks/slick/slick.js"></script>
+
+	<!-- Fancybox -->
+	<script src="/local/blocks/fancybox/jquery.fancybox.min.js"></script>
 
 	<!-- Ion Calendar -->
 	<script src="/local/blocks/ion.calendar/moment-with-locales.min.js"></script>
@@ -103,8 +109,10 @@
 						<div class="col-md-4">
 							<div class="med-detail__diplomas">
 								<h3 class="med-detail__diplomas-title">Сертификаты и дипломы</h3>
-								<img src="/local/images/diploma-1.jpg" class="med-detail__diplomas-item">
-								<img src="/local/images/diploma-2.jpg" class="med-detail__diplomas-item">
+								<a data-fancybox="gallery" href="/local/images/diploma-1.jpg"><img src="/local/images/diploma-1.jpg" class="med-detail__diplomas-item"></a>
+								<a data-fancybox="gallery" href="/local/images/diploma-2.jpg"><img src="/local/images/diploma-2.jpg" class="med-detail__diplomas-item"></a>
+								<a data-fancybox="gallery" href="/local/images/diploma-1.jpg"><img src="/local/images/diploma-1.jpg" class="med-detail__diplomas-item"></a>
+								<a data-fancybox="gallery" href="/local/images/diploma-2.jpg"><img src="/local/images/diploma-2.jpg" class="med-detail__diplomas-item"></a>
 							</div>
 						</div>
 						<div class="col-md-12 block-delimmiter"></div>

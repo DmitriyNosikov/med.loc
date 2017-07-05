@@ -18,6 +18,9 @@
 	<link rel="stylesheet" href="/local/blocks/slick/slick.css">
 	<link rel="stylesheet" href="/local/blocks/slick/slick-theme.css">
 
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="/local/blocks/fancybox/jquery.fancybox.min.css">
+
 	<!-- Main scripts -->
 	<script src="/local/blocks/jquery/jquery-3.2.1.js"></script>
 	<script src="/local/blocks/bootstrap/bootstrap.js"></script>
@@ -33,6 +36,9 @@
 
 	<!-- Masked Input -->
 	<script src="/local/blocks/maskedInput/jquery.maskedinput.js"></script>
+
+	<!-- Fancybox -->
+	<script src="/local/blocks/fancybox/jquery.fancybox.min.js"></script>
 
 	<title>Медицинские эксперты</title>
 </head>
